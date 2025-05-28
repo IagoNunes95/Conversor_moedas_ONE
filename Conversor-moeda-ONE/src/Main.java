@@ -8,14 +8,22 @@ public class Main {
 		ConversorMoedaService conversor = new ConversorMoedaService();
 		
 		//criando array das moedas para o nosso menu.
-		String[] moedas = { "BRL", "USD", "EUR", "GBP", "JPY", "ARS" };
+		String[] moedas = { "BRL", "USD", "EUR", "GBP", "JPY", "ARS",};
+		String[] nomes = {
+			    "BRL (Real Brasileiro)",
+			    "USD (Dólar Americano)",
+			    "EUR (Euro)",
+			    "GBP (Libra Esterlina)",
+			    "JPY (Iene Japonês)",
+			    "ARS (Peso Argentino)"
+			};
 
 		System.out.println("========== CONVERSOR DE MOEDAS ==========\n");
 
 		//laço para leitura do array para um menu mais simples.
 		System.out.println("Escolha a moeda de ORIGEM:");
-		for (int i = 0; i < moedas.length; i++) {
-			System.out.printf("%d - %s\n", i + 1, moedas[i]);
+		for (int i = 0; i < nomes.length; i++) {
+			System.out.printf("%d - %s\n", i + 1, nomes[i]);
 		}
 		System.out.print("Digite o número da moeda de origem: ");
 		int opcaoOrigem = scanner.nextInt();
@@ -23,8 +31,8 @@ public class Main {
 
 		
 		System.out.println("\nEscolha a moeda de DESTINO:");
-		for (int i = 0; i < moedas.length; i++) {
-			System.out.printf("%d - %s\n", i + 1, moedas[i]);
+		for (int i = 0; i < nomes.length; i++) {
+			System.out.printf("%d - %s\n", i + 1, nomes[i]);
 		}
 		System.out.print("Digite o número da moeda de destino: ");
 		int opcaoDestino = scanner.nextInt();
