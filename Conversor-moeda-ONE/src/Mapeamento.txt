@@ -1,0 +1,8 @@
+Dados o passo a passo do desafio aonde preciso criar um programa de conversão de moedas que englobe o que estudamos até aqui,
+ sendo eles o uso do httpClient, Request, Response e Json, irei criar o programa seguindo os passos:
+
+1 - criar uma classe responsavel pela comunicação com a API
+2 - a classe da API irá possuir um construtor padrão para instanciar o gson e httpclient pra não precisar criar eles no main e deixar o código longo e bagunçado.
+3 - criar uma Main para inicializar a classe da API.
+4 - na Main irei criar o menu usando o Scanner e usar um laço para criar um menu mais simples em vez do uso do CASE.
+5 - criar o try e catch para inicializar a busca do resultado na API e lançar a conversão pro usuário.
